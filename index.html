@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech Skill Vocational Institute</h1>
+        <h1>Test No 5</h1>
+        <div class="name-section">
+            <label for="studentName">Enter your name:</label>
+            <input style="height:40px; width: 180px;" type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. Accuracy is always the primary metric used to measure a model's performance.?</p>
+            <input type="checkbox" id="SetPrimarymetrictoaccuracy" value="Set Primary metric to accuracy.">
+            <label for="Set Primary metric to accuracy.">No</label><br>
+            
+            <input type="checkbox" id="EnableExplainbestmodel" value="Enable Explain best model">
+            <label for="Enable Explain best model">Yes</label>
+            
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2.Predicting how many hours of overtime a delivery person will work based on
+                the number of order received is an example of</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="inclusiveness">Regression</option>
+                <option value="reliability and safety">Classification</option>
+                <option value="transparency">Clustering</option>
+                
+            </select>
+        </div>
+          <!-- Question 3 (Dropdown) -->
+        
+          <div class="question">
+            <p>3. Understand how accept a customer is based on text contained in the support ticket?</p>
+            <input type="radio" id="Computer" name="workloadAI" value="Computer vision">
+            <label for="Computervision">Sentiment Analysis</label>
+            
+            <input type="radio" id="Computer" name="workloadAI" value="Machine Learning">
+            <label for="Machine Learning">Key Phrase extraction</label>
+            
+            <input type="radio" id="Computer" name="workloadAI" value="Artificial Intelligence">
+            <label for="Artificial Intelligence">Entity Recognition</label>
+        </div>
+        
+ <!-- Question 4 (Checkboxes) -->
+
+ <div class="question">
+    <p>4.Extract key dates from the support ticket?</p>
+    <input type="radio" id=" guiding" name="train" value="VALUE1">
+    <label for=" fairness">Text Analytics</label>
+    <BR></BR>
+    <input type="radio" id="guiding" name="train" value="VALUE2">
+    <label for="inclusiveness">Entity recognition</label>
+    <br>
+    <input type="radio" id="guiding" name="train" value="VALUE3">
+    <label for="accountability">Key Phrase extraction</label>
+</div>
+
+<div class="question">
+    <p>5. You are developing a Conversational AI solution that will communicate with user through multiple channels including email,Microsoft team, and webchat.Which service should you use?</p>
+    <select id="question5">
+        <option value="">--Select an answer--</option>
+        <option value="Privacy and security">Text Analytics</option>
+        <option value="Reliability and safety">Azure Bot Service</option>
+        
+        <option value="Both a,b & c">Translator</option>
+    </select>
+</div>
+<div class="question">
+    <p>6. Which condition satisfy the face service?</p>
+    <input type="checkbox" id="mic" value="Image classication">
+    <label for="Image classication">The face services can be used to perform face recognition for employees.</label><br>
+    
+    <input type="checkbox" id="mic" value="Identify handwritten letters">
+    <label for="Identify handwritten letters">If an employe wearing sunglasses the face service will always fail recognize the employee.</label><br>
+    
+    <input type="checkbox" id="mic" value="R">
+    <label for="R">The face service will be more accurate if you provide more sample photo of each employee from different angle.</label>
+    
+    
+</div>
+
+<div class="question">
+    <p>7. You use drones to identify where weeds grow between rows of crops to send an instruction for the removal of the
+        weeds?</p>
+    <select id="question7">
+        <option value="">--Select an answer--</option>
+        <option value="ObjectDetection">Object detection</option>
+        
+        <option value="OCR">Semantic segmentation</option>
+    </select>
+</div>
+<div class="question">
+    <p>8. Do two images of faces belong to the same person?</p>
+    <select id="question8">
+        <option value="">--Select an answer--</option>
+        <option value="fairness">Face Verfication</option>
+        
+        <option value="inclusiveness">Face identification</option>
+    </select>
+</div>
+<div class="question">
+    <p>9. <img src="fruit.jpg" alt=""> </p>
+    <input type="radio" id="CNN" name="AI" value="CNN">
+    <label for="CNN">Object detection</label>
+    
+    <input type="radio" id="RNN" name="AI" value="RNN">
+    <label for="RNN">Image classification</label>
+    
+    
+</div>
+<div class="question">
+  <p>10.You are developing a solution that uses the Text Analytics service.
+    You need to identify the main talking points in a collection of documents.
+    Which type of natural language processing should you use?</p>
+    <input type="radio" id="Detect individual objects in an image" name="images" value="Detect individual objects in an image">
+    <label for="Detect individual objects in an image">Key phrase extraction</label><BR></BR>
+    
+    <input type="radio" id="Assign a label to each pixel in the image" name="images" value="Assign a label to each pixel in the image">
+    <label for="Assign a label to each pixel in the image">Personal identifying information</label><BR></BR>
+   
+    
+</div>
+<div class="question">
+    <div class="question">
+        <p>11.You plan to develop a bot that will enable users to query a knowledge base by using natural language processing.?</p>
+        <input type="radio" id="Building AI systems that require no human oversight" name="At" value="Building AI systems that require no human oversight">
+        <label for="Building AI systems that require no human oversight">QnA Maker</label><br>
+        
+        <input type="radio" id="standards" name="At" value="standards">
+        <label for="standards">Azure bot services</label>
+        
+</div>
+<div class="question">
+    <p>12:In which scenarios can you use a speech synthesis solution? ?</p>
+      <input type="radio" id="Elevenlabs" name="image" value="Object detection">
+      <label for="Object detection">an AI character in a computer game that speaks audibly to a player</label><br><br>
+      
+      <input type="radio" id="Elevenlabs" name="image" value="OCR">
+      <label for="Elevenlabs">generating live captions for a news broadcast</label><br><br>
+      <input type="radio" id="Elevenlabs" name="image" value="Face detection">
+      <label for="Elevenlabs">extracting key phrases from the audio recording of a meeting</label>
+      
+      
+  </div>
+  <div class="question">
+    <p>13. You need to make the written press releases of your company available in a range of languages.
+        Which service should you use??</p>
+    <input type="radio" id="NO" name="Am" value="Voxel">
+    <label for="Voxel">Translator</label><br>
+    
+    <input type="radio" id="Yes" name="Am" value="Pixel">
+    <label for="Pixel">Speech</label>
+    
+    
+</div>
+<div class="question">
+    <p>14. You need to provide content for a business chatbot that will help answer simple user queries.
+        What are Two ways to create question and answer text by using QnA Maker?</p>
+    <input type="checkbox" id="inclusiveness" value="inclusiveness">
+    <label for="inclusiveness">Generate the questions and answers from an existing webpage.</label><br><br>
+    
+    <input type="checkbox" id="opinionatedness" value="opinionatedness">
+    <label for="opinionatedness">Connect the bot to the Cortana channel and ask questions by using Cortana.</label><br><br>
+    <input type="checkbox" id="reliability and safety" value="reliability and safety">
+    <label for="reliability and safety">Manually enter the questions and answers..</label>
+    
+</div>
+<div class="question">
+    <p>15. The question `Which act is playing on the main stage?` is an example of which type of elemen?</p>
+    <input type="radio" id="NO" name="Angle" value="6">
+    <label for="6">Entity</label><br>
+    
+    <input type="radio" id="Yes" name="Angle" value="4">
+    <label for="4">Utterance</label>
+    
+    
+</div>
+<div class="question">
+    <p>16: You have a natural language processing (NLP) model that was created by using data obtained without permission?
+        Which Microsoft principle for responsible AI does this breach?
+    </p>
+    <input type="radio" id="NO" name="Angl" value="6">
+    <label for="6">reliability and safety</label><br>
+    
+    <input type="radio" id="Yes" name="Angl" value="4">
+    <label for="4">transparency</label>
+    
+    
+</div>
+<button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
